@@ -24,14 +24,17 @@ $a-tags: 'a,a:active,a:focus,a:active;a:hover,a:visited';
 }
 // END SCSS Mixins & Functions 
 /** CSS RESET  **/
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+//Simple Reset
+* {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -125,7 +128,7 @@ header {
   }
 }
 .navbar {
-    border-top:3px solid $orange;
+    border-top:3px solid $white;
     background:$white;
 
 }
@@ -145,12 +148,13 @@ a:hover {
 }
 
 .logo {
-  width: 260px;
+  min-width: 200px;
   position:relative;
   top:-5px;
   font-size: 29px;
   display: inline-block;
   float:left;
+  margin-right:50px;
 }
 
 .logo-N {
@@ -210,8 +214,7 @@ a:hover {
   padding: 24px 6px 6px 6px;
 }
 .main-social-nav  {
-  max-width:230px;
-  margin:0px 0px 0px 100px;
+  margin:0px 0px 0px 120px;
   a {
     marign:0px;
   }
@@ -565,7 +568,12 @@ footer {
   }
   margin-bottom:20px;
 }
+.home-p {
 
+    @include prefixer(box-shadow,0 2px 1px rgba(0,0,0,.5));
+    max-width:320px;
+
+}
 .coming-soon-slink {
    background: $white;
    display: block;
@@ -692,10 +700,34 @@ footer {
   border-radius:0px !important;
   border:none;
 }
-@media only screen and (min-width: 340px) and (max-width: 767px) { 
+@media only screen and (min-width: 768px) and (max-width: 980px){
+    .navbar-nav {
+        float:none;
+      }
+    .main-social-nav {
+      display:none;
+    }
+  }
+@media only screen and (min-width: 980px) and (max-width: 1200px){
+    .navbar-nav {
+        float:none;
+      }
+    .main-social-nav {
+      margin-left:50px;
+
+
+    }
+    .main-social-nav li,a {
+      margin:3px;
+    }
+  }
+@media only screen and (min-width: 280px) and (max-width: 767px) { 
  
   .active a{
     border-radius:0px;
+  }
+  .navbar-nav {
+    text-align:center;
   }
   .nav>li>a:hover, .nav>li>a:focus {
   text-decoration: none;
@@ -703,9 +735,10 @@ footer {
   border-radius:0px;
 
 }
-  .main-social-nav {
-    margin:0 auto;
-  }
+.main-social-nav {
+  max-width:230px;
+  margin:0 auto;
+}
   .main-social-nav li a {
     display:inline-block;
     float:left;
