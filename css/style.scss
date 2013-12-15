@@ -387,11 +387,12 @@ overflow: hidden;
    display: block;
    max-width: 200px;
    max-height: 200px;
+      margin:78px auto 0px auto;
+
    font-size: 80px;
-   padding: 0px;
+   padding:0px;
    border-radius: 50%;
    line-height: 2.3em;
-   margin: 26px auto;
    color:$black;
    opacity: 0.87;
   @include prefixer(transition,0.4s all);
@@ -813,5 +814,21 @@ footer {
     background-image: url(../img/codepen-icon.png);
   background-repeat:no-repeat;
   opacity:0.8;
+
+}
+ .about-header-link {
+   background: $white;
+   display: block;
+   max-width: 200px;
+   max-height: 200px;
+      margin:78px auto 0px auto;
+
+   font-size: 80px;
+   padding:0px;
+   border-radius: 50%;
+   line-height: 2.3em;
+   color:$black;
+   opacity: 0.87;
+  @include prefixer(transition,0.4s all);
 
 }
