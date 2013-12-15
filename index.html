@@ -26,10 +26,7 @@
   <header class="">
     <div class="container">
      <div class="navbar-header">
-   <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"
-      <span class="sr-only">Toggle navigation</span>
-      <i class="fa fa-align-justify"></i> 
-    </button>-->
+ 
     
   </div>
 <div class="nav navbar navbar-fixed-top">
@@ -43,15 +40,6 @@
     <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
       <li class="active"><a href="index.html">Home</a></li>
-     <!-- <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
-        <ul class="dropdown-menu">
-          <li><a href="#about"> Link</a></li>
-          <li><a href="file:///Users/nategriffin/Sites/myPortfolio/about.html#resume"><i class="fa fa-file"></i> Resume</a></li>
-          <li><a href="#location"> Link</a></li>
-
-        </ul>
-      </li>-->
       <li><a href="about.html">About</a></li>
       <li><a href="work.html">Work</a></li>
       <li><a href="blog.html">Blog</a></li>
@@ -60,6 +48,7 @@
     <ul  class="main-social-nav nav navbar-nav" >
       <li><a href="https://twitter.com/NateGriffinJr" target="_blank"><i class="fa fa-twitter"></i></a></li>
       <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+      <li class="codepen"><a href="http://codepen.io/NateGriffin" class="codepen-logo" target="_blank"></a></li>
       <li><a href="https://github.com/NateGriffin" target="_blank"><i class="fa fa-github"></i></a></li>
       <li><a href="mailto:nategriffin1@gmail.com"><i class="fa fa-envelope"></i></a></li>
     </ul>
@@ -153,25 +142,7 @@
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
   <script>
-    /*$(document).ready(function(){
-      var bottom = ($(window).outerHeight() - $(window).height()) - 50; // 50 pixel to the bottom of the page; 
-      $(window).scroll(function(){
-          if ($(window).scrollTop() >= bottom ) {
-                  $("#scrollTopButton").fadeTo("slow",.95);
-             } else {
-                  $("#scrollTopButton").fadeOut("slow");
-             }
-      });
-
-      $("#scrollTopButton").click(function(){
-          $('html, body').animate({scrollTop:0}, 'slow');
-          $("#scrollTopButton").fadeOut("slow");
-      });
-  });*/
-  $('#scrollTopButton').click(function(e){
-      e.preventDefault();
-            $('html,body').animate({scrollTop : 0},140);
-        });
+ 
 
 
   $(document).ready(function() {

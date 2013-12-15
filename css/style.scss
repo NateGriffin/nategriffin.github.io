@@ -23,7 +23,7 @@ $a-tags: 'a,a:active,a:focus,a:active;a:hover,a:visited';
   @if $spec   {         #{$property}: $value; }
 }
 // END SCSS Mixins & Functions 
-/** CSS RESET  **/
+/** CSS RESET & Defaults **/
 //Simple Reset
 * {
   margin: 0;
@@ -32,9 +32,7 @@ $a-tags: 'a,a:active,a:focus,a:active;a:hover,a:visited';
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box
+  @include prefixer(box-sizing,border-box);
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -43,9 +41,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-body {
-  line-height: 1;
-}
 
 ol, ul {
   list-style: none;
@@ -55,29 +50,13 @@ blockquote, q {
   quotes: none;
 }
 
-blockquote {
+blockquote,q {
   &:before, &:after {
     content: '';
     content: none;
   }
 }
-
-q {
-  &:before, &:after {
-    content: '';
-    content: none;
-  }
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-* {
-  @include prefixer(box-sizing,border-box);
-}
-
-
+/* END Defaults/Resets */
 
 body {
   font-family: 'Source Sans Pro',Arial, sans-serif;
@@ -87,7 +66,7 @@ body {
 }
 
 
-/** Defaults **/
+/** Element Defaults **/
 .view-more-btn {
   margin:30px;
   margin-left:0px;
@@ -256,13 +235,35 @@ section {
   height: 240px;
   margin: 15px auto 10px auto;
   background: #fff;
-  border: 8px solid #eee;
+  //border: 8px solid #eee;
   @include prefixer(box-shadow,inset 0px 6px 12px rgba(50, 50, 50, 0.4));
   background-image: url(../img/mePic.jpg);
   background-size: cover;
   @include prefixer(transition,0.4s);
    @include prefixer(border-radius, 50%);
 }
+.codepen-logo {
+  background-image: url(../img/codepen-icon.png);
+  background-repeat:no-repeat;
+  width:30px;
+  height:30px;
+  
+}
+.codepen {
+  margin-top:12px; 
+  padding:2px; 
+}
+
+#about-me {
+    margin:20px 0px 90px 0px;
+    font-size:22px;
+    p {
+      text-align:left;
+      font-weight:300;
+      line-height:26px;
+      padding:14px;
+    }
+  }
 .my-blog-left {
   background:$white;
 }
@@ -294,7 +295,12 @@ section {
   }
 
 }
-
+.hide-text {
+      text-indent: 100%;
+white-space: nowrap;
+overflow: hidden;
+    
+    }
 
 .brain-blog {
   @include prefixer(box-shadow,inset 0px 14px 18px rgba(50, 50, 50, 0.4));
@@ -546,13 +552,8 @@ footer {
 
   }
 }
-#scrollTopButton {
-
-  font-size:30px;
-  position:relative;
-  top:-50px;
-  margin:0 auto;
-  left:-13px;
+.scrollTopButton {
+ color:$orange;
 
   a:focus,a:hover,a:active {
     color:$ft-orange;
@@ -650,6 +651,10 @@ footer {
     bottom:-3px; /* or whatever color you prefer */
   }
 }
+.scrollTopButton {
+  margin:0 auto;
+  text-align:center;
+}
 
    i.fa-download{
     font-size:20px;
@@ -671,8 +676,12 @@ footer {
 #tools {
   padding-top:150px;
   background:#FD6056;
+  .content {
+    text-align:center;
+  }
 
 }
+
 .twitter-timeline {
   border: none;
   max-width: 100%;
@@ -722,9 +731,7 @@ footer {
 
 
     }
-    .main-social-nav li,a {
-      margin:3px;
-    }
+   
   }
 @media only screen and (min-width: 280px) and (max-width: 767px) { 
  
@@ -741,13 +748,17 @@ footer {
 
 }
 .main-social-nav {
-  max-width:230px;
+  max-width:260px;
   margin:0 auto;
 }
   .main-social-nav li a {
     display:inline-block;
     float:left;
     border-radius:50%;
+  }
+  .codepen {
+    margin-top:3px;
+    padding:0px;
   }
   .about-header {
      min-height:140px;
@@ -758,6 +769,7 @@ footer {
     margin:10px;
     line-height: 1.4em;
   }
+
   #resume {
     .content {
      width: 95%;
@@ -796,4 +808,10 @@ footer {
     
   }
 }
+}
+.nav>li>.codepen-logo:hover {
+    background-image: url(../img/codepen-icon.png);
+  background-repeat:no-repeat;
+  opacity:0.8;
+
 }
