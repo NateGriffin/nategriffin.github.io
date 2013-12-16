@@ -70,10 +70,10 @@
             <a href="#me" class="about-header-link slideExpandUp">
                 <i class="fa fa-cogs"></i>
             </a>
-            <h2>About Me</h2>
+            <h2>Design</h2>
           </div>
            <div class="col-xs-6 col-md-6">
-            <a href="#resume" class="about-header-link slideExpandUp">
+            <a href="#code-examples" class="about-header-link slideExpandUp">
                 <i class="fa fa-code"></i>
             </a>
             <h2>Code</h2>
@@ -87,6 +87,7 @@
     <section class="portfolio-examples">
       <div class="container">
       <div class="row">
+        <h1>Design Samples</h1>
         <div class="portfolio-items">
  
 
@@ -105,11 +106,28 @@
      
 
         </div>
-     
+        <section id="code-examples">
+          <h1>Some Code Samples</h1>
+          <div class="codepen-em col-md-4 slideLeft">
+<p data-height="280" data-theme-id="3111" data-slug-hash="eIDtC" data-user="NateGriffin" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/NateGriffin/pen/eIDtC'>Personal Logo inspired by the one on http://cheeaun.com/ (only without using an image).</a> by Nate Griffin (<a href='http://codepen.io/NateGriffin'>@NateGriffin</a>) on <a href='http://codepen.io'>CodePen</a></p>
+<script async src="http://codepen.io/assets/embed/ei.js"></script>
+</div>
+          <div class="codepen-em col-md-4 slideLeft">
+
+<p data-height="280" data-theme-id="3111" data-slug-hash="alEqg" data-user="NateGriffin" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/NateGriffin/pen/alEqg'>Breaking Bad Logo In Css(and HTML)</a> by Nate Griffin (<a href='http://codepen.io/NateGriffin'>@NateGriffin</a>) on <a href='http://codepen.io'>CodePen</a></p>
+<script async src="http://codepen.io/assets/embed/ei.js"></script>
+</div>
+<div class="codepen-em col-md-4 slideLeft">
+
+<p data-height="268" data-theme-id="3111" data-slug-hash="Gykrz" data-user="NateGriffin" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/NateGriffin/pen/Gykrz'>Gykrz</a> by Nate Griffin (<a href='http://codepen.io/NateGriffin'>@NateGriffin</a>) on <a href='http://codepen.io'>CodePen</a></p>
+<script async src="http://codepen.io/assets/embed/ei.js"></script>
+</div>
+        </section>
 
       </div>
       </div>
     </section>
+
 </div>
 <footer class="clearfix">
   <div class="container"> 
@@ -125,21 +143,7 @@
   <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
   <script>
-    /*$(document).ready(function(){
-      var bottom = ($(window).outerHeight() - $(window).height()) - 50; // 50 pixel to the bottom of the page; 
-      $(window).scroll(function(){
-          if ($(window).scrollTop() >= bottom ) {
-                  $("#scrollTopButton").fadeTo("slow",.95);
-             } else {
-                  $("#scrollTopButton").fadeOut("slow");
-             }
-      });
-
-      $("#scrollTopButton").click(function(){
-          $('html, body').animate({scrollTop:0}, 'slow');
-          $("#scrollTopButton").fadeOut("slow");
-      });
-  });*/
+ 
   $('#scrollTopButton').click(function(e){
       e.preventDefault();
             $('html,body').animate({scrollTop : 0},140);
@@ -157,7 +161,22 @@
 
   });
 
+$(document).ready(function() {
+ $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
 
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 800);
+            return false;
+        }
+    }
+});
+    });
   </script>
 
   

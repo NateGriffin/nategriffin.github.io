@@ -832,3 +832,13 @@ footer {
   @include prefixer(transition,0.4s all);
 
 }
+#code-examples {
+  padding-top: 100px;
+  h1 {
+    padding:30px;
+  }
+}
+.codepen-em {
+  padding:20px;
+  max-width:280px;
+}
