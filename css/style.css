@@ -321,11 +321,11 @@ section {
   display: block;
   max-width: 200px;
   max-height: 200px;
+  margin: 78px auto 0px auto;
   font-size: 80px;
   padding: 0px;
   border-radius: 50%;
   line-height: 2.3em;
-  margin: 26px auto;
   color: #0b080b;
   opacity: 0.87;
   -moz-transition: 0.4s all;
@@ -473,17 +473,13 @@ footer {
     -webkit-transition: 0.27s;
     transition: 0.27s; }
 
-#scrollTopButton {
-  font-size: 30px;
-  position: relative;
-  top: -50px;
-  margin: 0 auto;
-  left: -13px; }
-  #scrollTopButton a:focus, #scrollTopButton a:hover, #scrollTopButton a:active {
+.scrollTopButton {
+  color: #ffa217; }
+  .scrollTopButton a:focus, .scrollTopButton a:hover, .scrollTopButton a:active {
     color: #ffb359;
     text-decoration: none;
     outline: 0; }
-  #scrollTopButton a:hover i {
+  .scrollTopButton a:hover i {
     color: #ffb359; }
 
 /** Footer END **/
@@ -565,6 +561,9 @@ footer {
     position: relative;
     bottom: -3px;
     /* or whatever color you prefer */ }
+  #resume .scrollTopButton {
+    margin: 0 auto;
+    text-align: center; }
   #resume i.fa-download {
     font-size: 20px;
     height: 20px;
@@ -583,6 +582,8 @@ footer {
 #tools {
   padding-top: 150px;
   background: #FD6056; }
+  #tools .content {
+    text-align: center; }
 
 .twitter-timeline {
   border: none;
@@ -686,3 +687,24 @@ footer {
   background-image: url(../img/codepen-icon.png);
   background-repeat: no-repeat;
   opacity: 0.8; }
+
+.about-header-link {
+  background: white;
+  display: block;
+  max-width: 200px;
+  max-height: 200px;
+  margin: 78px auto 0px auto;
+  font-size: 80px;
+  padding: 0px;
+  border-radius: 50%;
+  line-height: 2.3em;
+  color: #0b080b;
+  opacity: 0.87;
+  -moz-transition: 0.4s all;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all; }
+
+#code-examples {
+  padding-top: 50px; }
+  #code-examples h1 {
+    padding: 30px; }
