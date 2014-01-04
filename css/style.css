@@ -48,10 +48,16 @@ body {
   background: #ffa217 !important;
   color: white !important;
   border: none !important;
-  border-radius: 0px;
+  border-radius: 4px;
   border-bottom: 4px solid #e59013 !important;
   font-size: 17px;
-  /**box-shadow: inset 0 1px 0 rgba(249,249,249,.25),inset 0 0 2px rgba(6,6,6,.1),0 4px 0 #c56c01;**/ }
+  transition: 360ms;
+  opacity: 0.87; }
+  .view-more-btn:hover, .view-more-btn:focus {
+    opacity: 1;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
 
 p {
   font-size: 17;
@@ -84,7 +90,7 @@ header {
   -webkit-transform: translateZ(0); }
 
 .navbar {
-  border-top: 3px solid white;
+  border-top: 3px solid #ffa217;
   background: white; }
 
 input::-moz-focus-inner {
@@ -97,7 +103,7 @@ input::-moz-focus-inner {
   font-size: 29px;
   display: inline-block;
   float: left;
-  margin-right: 50px;
+  margin-right: 62px;
   color: #0b080b; }
 
 .logo-N {
@@ -505,10 +511,10 @@ section {
   font-size: 20px; }
 
 .fa-html5 {
-  color: #F1652A; }
+  color: #ffa217; }
 
 .fa-css3 {
-  color: #016FBA; }
+  color: #4affb6; }
 
 #about-me, #resume, #location {
   padding-top: 100px; }
@@ -603,7 +609,7 @@ section {
   border: none; }
 
 #contact {
-  background: #e3765d;
+  background: #ff5c4a;
   color: white;
   font-size: 20px;
   padding-bottom: 120px; }
