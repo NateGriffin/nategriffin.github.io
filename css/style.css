@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** CSS RESET & Defaults **/
 * {
   margin: 0;
@@ -25,7 +26,7 @@ blockquote:before, blockquote:after, q:before, q:after {
   content: none; }
 
 a {
-  color: #202020;
+  color: #ffa217;
   text-decoration: none;
   -moz-transition: 0.27s;
   -webkit-transition: 0.27s;
@@ -43,8 +44,8 @@ body {
 
 /** Element Defaults **/
 .view-more-btn {
-  margin: 30px auto;
-  /* margin-left: 0px; */
+  margin: 30px;
+  margin-left: 0px;
   background: #ffa217 !important;
   color: white !important;
   border: none !important;
@@ -482,7 +483,8 @@ section {
   position: fixed;
   opacity: 0.4;
   top: 84%;
-  right: 10%; }
+  right: 10%;
+  font-size: 25px; }
   .scrollTopButton a:focus, .scrollTopButton a:hover, .scrollTopButton a:active {
     color: #ffb359;
     text-decoration: none;
@@ -554,8 +556,11 @@ section {
     bottom: -3px;
     /* or whatever color you prefer */ }
   #resume .scrollTopButton {
-    margin: 0 auto;
-    text-align: center; }
+    color: #0b080b;
+    position: fixed;
+    opacity: 0.4;
+    top: 84%;
+    right: 10%; }
   #resume i.fa-download {
     font-size: 20px;
     height: 20px;
@@ -652,7 +657,8 @@ section {
   transition: 0.4s all; }
 
 #code-examples {
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 80px; }
   #code-examples h1 {
     padding: 30px; }
 
@@ -725,19 +731,20 @@ footer {
 
 /** Footer END **/
 /** Media Quieries **/
-@media only screen and (min-width: 768px) and (max-width: 980px) {
+@media only screen and (max-width: 980px) {
   .navbar-nav {
     float: none; }
 
   .main-social-nav {
-    display: none; } }
-@media only screen and (min-width: 980px) and (max-width: 1200px) {
+    display: block;
+    margin-left: 20px; } }
+@media only screen and (max-width: 1200px) {
   .navbar-nav {
     float: none; }
 
   .main-social-nav {
     margin-left: 50px; } }
-@media only screen and (min-width: 280px) and (max-width: 390px) {
+@media only screen and (max-width: 390px) {
   .tools {
     display: none; }
 
@@ -745,7 +752,7 @@ footer {
     margin-bottom: 20px;
     position: relative;
     top: 10px; } }
-@media only screen and (min-width: 280px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .active a {
     border-radius: 0px; }
 
@@ -781,3 +788,5 @@ footer {
 
   #resume .content, #tools .content {
     width: 95%; } }
+#design-examples {
+  padding-top: 76px; }

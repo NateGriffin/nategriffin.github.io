@@ -561,6 +561,7 @@ section {
     opacity: 0.4;
     top: 84%;
     right: 10%;
+    font-size:25px;
     a:focus,a:hover,a:active {
         color: $ft-orange;
         text-decoration: none;
@@ -645,8 +646,12 @@ section {
         }
     }
     .scrollTopButton {
-        margin: 0 auto;
-        text-align: center;
+        color: #0b080b;
+        position: fixed;
+        opacity: 0.4;
+        top: 84%;
+        right: 10%;
+
     }
     i.fa-download {
         font-size: 20px;
@@ -763,6 +768,8 @@ section {
 
 #code-examples {
     padding-top: 50px;
+    padding-bottom: 80px;
+
     h1 {
         padding: 30px;
     }
@@ -845,16 +852,17 @@ footer {
 /** Footer END **/
 
 /** Media Quieries **/
-@media only screen and (min-width: 768px) and (max-width: 980px) {
+@media only screen and (max-width: 980px) {
     .navbar-nav {
         float: none;
     }
     .main-social-nav {
-        display: none;
+        display:block;
+        margin-left:20px;
     }
 }
 
-@media only screen and (min-width: 980px) and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     .navbar-nav {
         float: none;
     }
@@ -863,7 +871,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 280px) and (max-width: 390px) {
+@media only screen and (max-width: 390px) {
     .tools {
         display: none;
     }
@@ -876,7 +884,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 280px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
     .active a {
         border-radius: 0px;
     }
@@ -915,4 +923,7 @@ footer {
             width: 95%;
         }
     }
+}
+#design-examples {
+padding-top: 76px;
 }
