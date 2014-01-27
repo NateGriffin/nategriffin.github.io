@@ -260,13 +260,16 @@ section {
 .codepen-logo {
     background-image: url(../img/codepen-icon.png);
     background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
+    background-position:center;
+    width: 47px;
+    height: 53px;
 }
 
 .codepen {
     margin-top: 12px;
     padding: 2px;
+    position: relative;
+    top: -14px;
 }
 
 #about-me {
@@ -748,7 +751,9 @@ section {
 .nav>li>.codepen-logo:hover {
     background-image: url(../img/codepen-icon.png);
     background-repeat: no-repeat;
-    opacity: 0.8;
+    background-position:center;
+    opacity: 0.6;
+    
 }
 
 .about-header-link {
