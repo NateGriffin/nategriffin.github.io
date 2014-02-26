@@ -629,8 +629,8 @@ section {
   #contact a:hover {
     opacity: 1; }
   #contact .fa-envelope {
-    color: white;
-    font-size: 25em;
+    color: #ffa217;
+    font-size: 4em;
     text-shadow: 0px 4px 4px rgba(50, 50, 50, 0.4); }
   @media only screen and (max-width: 520px) {
     #contact .fa-envelope {
@@ -794,3 +794,52 @@ footer {
     width: 95%; } }
 #design-examples {
   padding-top: 76px; }
+
+form {
+  max-width: 380px;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.4);
+  background: #fff;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px; }
+
+input {
+  display: block;
+  width: 97%;
+  height: 40px;
+  font-size: 26px;
+  margin: 10px auto;
+  padding: 5px;
+  background: #F7F8FA;
+  transition: 0.2s linear 0s;
+  border: 1px solid #dddddd; }
+  input:focus {
+    background: #DBE9F1; }
+
+textarea {
+  width: 97%;
+  border: 0px;
+  padding: 5px;
+  font-size: 20px;
+  background: #F7F8FA;
+  border: 1px solid #dddddd;
+  transition: 0.2s linear 0s; }
+  textarea:focus {
+    background: #DBE9F1; }
+
+input[type="submit"] {
+  background: #FE6E66;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  line-height: 1.2em;
+  transition: 0.4s ease-in-out;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2); }
+  input[type="submit"]:hover {
+    background: #FF4531; }
+
+.header {
+  padding: 20px;
+  color: #FFA217; }
