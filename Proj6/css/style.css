@@ -1,0 +1,129 @@
+/** Simple Reset **/
+ * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+body {
+    background: #26C1C2;
+    font-family:'Open Sans', arial, sans-serif;
+}
+.wrapper {
+    max-width: 960px;
+    margin:0 auto;
+}
+.fa {
+    font-size:100px;
+    background:#71E2E1;
+    padding:18px;
+    color:#fff;
+    margin:4px;
+    border-radius:50%;
+}
+div.devices > .fa {
+    background:none;
+    border:0;
+    color:#fff;
+    padding:0px;
+    color:#1E1E1E;
+}
+div.devices {
+    max-width:400px;
+    padding:10px;
+    background: #FFF;
+    text-align: center;
+    box-shadow:0px 2px 1px rgba(0, 0, 0, 0.23);
+    margin: 10px auto;
+}
+header {
+    text-align: center;
+}
+header h1 {
+    color:#fff;
+    text-shadow: 0px 6px 0 rgba(0, 0, 0, 0.15);
+    font-size:80px;
+}
+p {
+    max-width:750px;
+    margin-left:60px;
+    padding:5px;
+}
+h2.title {
+    margin-left:60px;
+    padding:5px;
+    font-size:27px;
+}
+.header-icon {
+    background:#2673c2;
+    text-align: center;
+}
+section {
+    padding:10px;
+    margin:20px auto;
+    background: #FFF;
+    box-shadow:0px 2px 1px rgba(0, 0, 0, 0.23);
+}
+ol {
+    padding: 20px;
+    width: 350px;
+    margin: 10px auto;
+}
+.first {
+    text-align: center;
+}
+ul {
+    list-style: none;
+    text-align: center;
+}
+ul.test > li:nth-child(1) {
+    font-size:200px;
+}
+ul.test > li:nth-child(2) {
+    font-size:150px;
+}
+ul.test > li:nth-child(3) {
+    font-size:100px;
+}
+ul.test > li:nth-child(4) {
+    font-size:50px;
+}
+.img {
+    margin:10px auto;
+    max-width: 460px;
+}
+.fa.fa-pencil-square-o.header-icon, .fa.fa-eye.header-icon,.fa.fa-book{
+    top: -20px;
+    left: -30px;
+    font-size: 60px;
+    position: absolute;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, -6.85);
+}
+
+.resources {
+	text-align: center;
+	padding-left:0px;
+	max-width:340px;
+}
+.resources > .title {
+	margin:0px;
+}
+.resources > ul{
+	width:100px;
+	text-align: left;
+	margin:0 auto;
+}
+
+.center-text {
+	text-align: center;
+}
+.devices > p {
+margin-left: 0px;
+}
+.fa.fa-eye {
+    background: #DE5757;
+}
