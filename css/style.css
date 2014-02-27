@@ -840,6 +840,12 @@ input[type="submit"] {
   input[type="submit"]:hover {
     background: #FF4531; }
 
-.header {
+#contact .header {
   padding: 20px;
   color: #FFA217; }
+
+#contact .fa-envelope {
+  color: #ffa217;
+  font-size: 2em;
+  display: block;
+  /* text-shadow: 0px 4px 4px rgba(50, 50, 50, 0.4); */ }
