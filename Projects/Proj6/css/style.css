@@ -96,7 +96,7 @@ ul.test > li:nth-child(4) {
     margin:10px auto;
     max-width: 460px;
 }
-.fa.fa-pencil-square-o.header-icon, .fa.fa-eye.header-icon,.fa.fa-book{
+.fa.fa-pencil-square-o.header-icon, .fa.fa-eye.header-icon,.fa.fa-book,.fa.fa-bookmark{
     top: -20px;
     left: -30px;
     font-size: 60px;
@@ -126,4 +126,7 @@ margin-left: 0px;
 }
 .fa.fa-eye {
     background: #DE5757;
+}
+.fa.fa-bookmark {
+    background: #E3965C;
 }
