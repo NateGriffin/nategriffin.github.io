@@ -28,8 +28,7 @@ a {
 body {
   font-family: 'Source Sans Pro',Arial, sans-serif;
   color: #0b080b;
-  padding-top: 70px;
-  line-height: 1.6em; }
+  padding-top: 70px; }
 
 /** Element Defaults **/
 .view-more-btn {
