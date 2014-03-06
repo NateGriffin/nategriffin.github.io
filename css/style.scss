@@ -33,15 +33,15 @@ $a-tags: "a,a:active,a:focus,a:active;a:hover,a:visited";
 // END SCSS Mixins & Functions
 /** CSS RESET & Defaults **/
 //Simple Reset
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    @include prefixer(box-sizing, border-box);
-}
+// * {
+//     margin: 0;
+//     padding: 0;
+//     border: 0;
+//     font-size: 100%;
+//     font: inherit;
+//     vertical-align: baseline;
+//     @include prefixer(box-sizing, border-box);
+// }
 
 /* HTML5 display-role reset for older browsers */
 
@@ -135,7 +135,7 @@ header {
 }
 
 .navbar {
-    border-top: 3px solid $orange;
+    border-top: 2px solid $orange;
     background: $white;
 }
 
