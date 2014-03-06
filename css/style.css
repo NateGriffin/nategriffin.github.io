@@ -130,7 +130,8 @@ input::-moz-focus-inner {
 
 .navbar-nav {
   font-size: 20px;
-  line-height: 2.6em; }
+  line-height: 2.6em;
+  float: right; }
   .navbar-nav a {
     transition: 0.3s all;
     padding: 6px;
