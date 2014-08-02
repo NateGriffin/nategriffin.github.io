@@ -1004,16 +1004,15 @@ footer a {
   .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
     background-color: #ffa217;
-    border-radius: 0px;
   }
 
-  /* line 886, style.scss */
+  /* line 885, style.scss */
   .main-social-nav {
     max-width: 260px;
     margin: 0 auto;
   }
 
-  /* line 890, style.scss */
+  /* line 889, style.scss */
   .main-social-nav li a {
     display: inline-block;
     float: left;
@@ -1021,12 +1020,12 @@ footer a {
     margin: 0px;
   }
 
-  /* line 897, style.scss */
+  /* line 896, style.scss */
   .about-header {
     min-height: 140px;
   }
 
-  /* line 900, style.scss */
+  /* line 899, style.scss */
   .about-header-link {
     color: #000;
     background: transparent;
@@ -1034,17 +1033,17 @@ footer a {
     line-height: 1.4em;
   }
 
-  /* line 907, style.scss */
+  /* line 906, style.scss */
   #resume .content, #tools .content {
     width: 95%;
   }
 }
-/* line 912, style.scss */
+/* line 911, style.scss */
 #design-examples {
   padding-top: 76px;
 }
 
-/* line 916, style.scss */
+/* line 915, style.scss */
 form {
   max-width: 380px;
   box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.4);
@@ -1055,7 +1054,7 @@ form {
   border-radius: 5px;
 }
 
-/* line 927, style.scss */
+/* line 926, style.scss */
 input {
   display: block;
   width: 97%;
@@ -1067,12 +1066,12 @@ input {
   transition: 0.2s linear 0s;
   border: 1px solid #dddddd;
 }
-/* line 937, style.scss */
+/* line 936, style.scss */
 input:focus {
   background: #DBE9F1;
 }
 
-/* line 942, style.scss */
+/* line 941, style.scss */
 textarea {
   width: 97%;
   border: 0px;
@@ -1082,12 +1081,12 @@ textarea {
   border: 1px solid #dddddd;
   transition: 0.2s linear 0s;
 }
-/* line 951, style.scss */
+/* line 950, style.scss */
 textarea:focus {
   background: #DBE9F1;
 }
 
-/* line 956, style.scss */
+/* line 955, style.scss */
 input[type="submit"] {
   background: #FE6E66;
   border: none;
@@ -1098,18 +1097,18 @@ input[type="submit"] {
   transition: 0.4s ease-in-out;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
-/* line 965, style.scss */
+/* line 964, style.scss */
 input[type="submit"]:hover {
   background: #FF4531;
 }
 
-/* line 969, style.scss */
+/* line 968, style.scss */
 #contact .header {
   padding: 20px;
   color: #FFA217;
 }
 
-/* line 973, style.scss */
+/* line 972, style.scss */
 #contact .fa-envelope {
   color: #ffa217;
   font-size: 2em;
