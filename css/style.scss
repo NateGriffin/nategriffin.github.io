@@ -259,20 +259,8 @@ section {
     /* text-indent without this can cause choppy animation */
 }
 
-.codepen-logo {
-    background-image: url(../img/codepen-icon.png);
-    background-repeat: no-repeat;
-    background-position:center;
-    width: 47px;
-    height: 53px;
-}
 
-.codepen {
-    margin-top: 12px;
-    padding: 2px;
-    position: relative;
-    top: -14px;
-}
+
 
 #about-me {
     margin: 20px 0px 90px 0px;
@@ -749,13 +737,6 @@ section {
     }
 }
 
-.nav>li>.codepen-logo:hover {
-    background-image: url(../img/codepen-icon.png);
-    background-repeat: no-repeat;
-    background-position:center;
-    opacity: 0.6;
-    
-}
 
 .about-header-link {
     background: $white;
