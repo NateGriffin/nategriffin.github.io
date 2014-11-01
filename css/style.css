@@ -1004,7 +1004,7 @@ footer a {
   .nav > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
     background-color: #ffa217;
-    border-radius: 4px;
+    border-radius: 0px;
   }
 
   /* line 886, style.scss */
