@@ -116,11 +116,12 @@ footer {
     padding:15px;
 }
 .footer {
-        font-family: 'open-sans',sans-serif;
  padding:20px;
 -webkit-box-shadow: inset 0px 10px 7px -13px rgba(0,0,0,0.75);
 -moz-box-shadow: inset 0px 10px 7px -13px rgba(0,0,0,0.75);
 box-shadow: inset 0px 10px 7px -13px rgba(0,0,0,0.75);
+        font-family: 'open-sans',sans-serif;
+
 }
 .work-history-text {
     text-align: center; font-family: 'Oswald'; 
