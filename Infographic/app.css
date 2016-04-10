@@ -123,6 +123,11 @@ box-shadow: inset 0px 10px 7px -13px rgba(0,0,0,0.75);
         font-family: 'open-sans',sans-serif;
 
 }
+.nav-bar {
+    width:630px;
+    margin:0 auto;
+
+}
 .work-history-text {
     text-align: center; font-family: 'Oswald'; 
    padding-bottom:15px;
