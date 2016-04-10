@@ -116,7 +116,7 @@ footer {
     padding:15px;
 }
 .footer {
- padding:20px;
+ padding:25px;
 -webkit-box-shadow: inset 0px 10px 7px -13px rgba(0,0,0,0.75);
 -moz-box-shadow: inset 0px 10px 7px -13px rgba(0,0,0,0.75);
 box-shadow: inset 0px 10px 7px -13px rgba(0,0,0,0.75);
@@ -130,7 +130,7 @@ box-shadow: inset 0px 10px 7px -13px rgba(0,0,0,0.75);
 }
 .work-history-text {
     text-align: center; font-family: 'Oswald'; 
-   padding-bottom:15px;
+   padding-bottom:20px;
 }
 .social-container {
     display: block;
